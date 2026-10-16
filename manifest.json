@@ -1,0 +1,34 @@
+{
+  "arc_tidy": {
+    "control_path": "arc-tidy/control.html",
+    "home_path": "arc-tidy/home.html",
+    "home_payload": {
+      "bytes": 55,
+      "expected_vulnerable_destination": "~/arc-tidy-github-pages-proof-0b84b1a3905e.txt",
+      "path": "arc-tidy/payload/ArcTidyPublicProbe-0b84b1a3905e.txt",
+      "sha256": "d0920e40b6ba76149c519bf6f56eaaab30b55bdc2db8d0613035996bc58f889a",
+      "suggested_filename": "ArcTidyPublicProbe-0b84b1a3905e.txt"
+    },
+    "launchagent_payload": {
+      "automatic_execution_claim": false,
+      "bytes": 490,
+      "expected_vulnerable_destination": "~/Library/LaunchAgents/com.browsercompany.arc.tidy.github.0b84b1a3905e.plist",
+      "path": "arc-tidy/payload/ArcTidyPublicLaunchAgentProbe-0b84b1a3905e.plist",
+      "sha256": "b6dd561905c258d27c5b9d347705a2306c1ca92b0cece6ae05b37ce5d51abc42",
+      "suggested_filename": "ArcTidyPublicLaunchAgentProbe-0b84b1a3905e.plist"
+    },
+    "positive_path": "arc-tidy/"
+  },
+  "dia_fullscreen": {
+    "data_collection": false,
+    "fullscreen_denied_control_path": "dia-fullscreen/denied.html",
+    "one_trusted_click_required": true,
+    "positive_path": "dia-fullscreen/",
+    "same_origin_control_path": "dia-fullscreen/control.html",
+    "shared_frame_path": "dia-fullscreen/frame.html",
+    "shared_frame_sha256": "1b4021aaada0ac2377d12addc579fb767807fad374ce804093ba317bf35dd810"
+  },
+  "fixture": "browser-company-public-pocs-v1",
+  "public_base": "https://mindflarex.github.io/browser-company-public-pocs/",
+  "token": "0b84b1a3905e"
+}
