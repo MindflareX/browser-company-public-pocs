@@ -21,6 +21,10 @@ async function preflight() {
     hashNode.textContent = actualHash;
     status.textContent = 'Payload verified. Click the button to start one ordinary download.';
     button.disabled = false;
+    if (new URLSearchParams(location.search).get('autorun') === '1') {
+      status.textContent = 'Payload verified. Automated validation download starts in one second.';
+      setTimeout(() => button.click(), 1000);
+    }
   } catch (error) {
     status.textContent = `Preflight failed: ${error.message}`;
   }
